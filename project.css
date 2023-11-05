@@ -1,0 +1,137 @@
+*{
+    margin: 0;
+    padding: 0;
+   }
+   
+
+html{
+       width: 100vw;
+       height: 100vh;
+   }
+   body {
+    margin: 0;
+    padding: 0; }
+.button {
+    display: block;
+    position: relative;
+    width: 56px;
+    height: 56px;
+    margin: 0;
+    overflow: hidden;
+    outline: none;
+    background-color: transparent;
+    border: 0;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+  }
+  
+  .button:before,
+  .button:after {
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    inset: 7px;
+  }
+  
+  .button:before {
+    border: 4px solid #201f1f;
+    transition: opacity .4s cubic-bezier(.77, 0, .175, 1) 80ms, transform .5s cubic-bezier(.455, .03, .515, .955) 80ms;
+  }
+  
+  .button:after {
+    border: 4px solid #96daf0;
+    transform: scale(1.3);
+    transition: opacity .4s cubic-bezier(.165, .84, .44, 1), transform .5s cubic-bezier(.25, .46, .45, .94);
+    opacity: 0;
+  }
+  
+  .button:hover:before,
+  .button:focus:before {
+    opacity: 0;
+    transform: scale(0.7);
+    transition: opacity .4s cubic-bezier(.165, .84, .44, 1), transform .5s cubic-bezier(.25, .46, .45, .94);
+  }
+  
+  .button:hover:after,
+  .button:focus:after {
+    opacity: 1;
+    transform: scale(1);
+    transition: opacity .4s cubic-bezier(.77, 0, .175, 1) 80ms, transform .5s cubic-bezier(.455, .03, .515, .955) 80ms;
+  }
+  
+  .button-box {
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  
+  .button-elem {
+    display: block;
+    width: 20px;
+    height: 20px;
+    margin: 17px 18px 0 18px;
+    transform: rotate(180deg);
+    fill: #0f0e0e;
+  }
+  
+  .button:hover .button-box,
+  .button:focus .button-box {
+    transition: .4s;
+    transform: translateX(-56px);
+  }
+  .button1 {
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    letter-spacing: 2px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #000;
+    cursor: pointer;
+    border: 3px solid;
+    padding: 0.25em 0.5em;
+    box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px, 5px 5px 0px 0px;
+    position: relative;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+  }
+  .button1:active {
+    box-shadow: 0px 0px 0px 0px;
+    top: 5px;
+    left: 5px;
+  }
+  .os{
+    background-color: rgb(127, 136, 255);
+    align-content: center;
+    text-align: center;
+    padding-top: 16.5%;
+    padding-bottom: 16.5%;
+}
+  .oodp{
+    background-color: rgb(212, 255, 127);
+    align-content: center;
+    text-align: center;
+    padding-top: 16.5%;
+    padding-bottom: 16.5%;
+  }
+  .app{background-color: rgb(179, 76, 122);
+  align-content: center;
+  text-align: center;
+  padding-top: 16.5%;
+  padding-bottom: 16.5%;}
+
+  .dsa{background-color: rgb(76, 112, 179);
+    align-content: center;
+    text-align: center;
+    padding-top: 16.5%;
+    padding-bottom: 16.5%;}
+    .coa{
+        background-color: rgb(179, 102, 76);
+    align-content: center;
+    text-align: center;
+    padding-top: 16.5%;
+    padding-bottom: 16.5%;
+    }
+  
